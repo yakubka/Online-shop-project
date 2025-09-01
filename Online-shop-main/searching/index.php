@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 
 // Функция для обрезки текста описания до указанной длины символов
 function truncate_description($text, $length) {
-    // Убираем возможные теги HTML
+    
     $text = strip_tags($text);
 
     // Если длина текста меньше или равна заданной длине, возвращаем текст как есть
@@ -180,3 +180,4 @@ $result = $conn->query($sql);
 <?php
 $conn->close();
 ?>
+
