@@ -15,7 +15,7 @@ if ($conn->connect_error) {
     die("Ошибка подключения: " . $conn->connect_error);
 }
 
-// Функция для обрезки текста описания до указанной длины символов
+// Функция для обрезки текста описания до указанной длины 
 function truncate_description($text, $length) {
     
     $text = strip_tags($text);
@@ -180,4 +180,5 @@ $result = $conn->query($sql);
 <?php
 $conn->close();
 ?>
+
 
